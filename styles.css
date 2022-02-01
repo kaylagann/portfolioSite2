@@ -1,0 +1,290 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/******ANIMATION KEYFRAMES******/
+
+
+@keyframes fadein {
+    0%    { opacity: 0; }
+    100%  { opacity: 1; }
+  }
+
+@keyframes background {
+    from {background-color: #111111}
+    to {background-color: #e6e6da}
+}
+
+
+/******BEGIN STYLING*******/
+
+
+/******MAIN*******/
+
+@font-face {
+    font-family: "Pearl";
+    src: url('TAN-PEARL.woff');
+}
+
+header {
+    background: transparent;
+    height: 3em;
+    width: 100%;
+    position: fixed;
+    margin: 0;
+    padding: .5em 0;
+    align-items: center;
+    background-color: #e6e6da;
+    animation: fadein 1s;
+    display: flex;
+}
+
+#logo {
+    font-family: "Pearl";
+    font-size: 1.5em;
+    padding: .5em 2%;
+}
+
+nav {
+    text-transform: uppercase;
+    text-align: right;
+    width: 16%;
+    padding: 0 2%;
+    display: flex;
+}
+
+ul {
+    text-align: right;
+}
+
+header li {
+    list-style-type: none;
+    font-family: "Montserrat";
+    display: inline-block;
+    font-size: .8em;
+    padding-left: 1em;
+}
+
+header a {
+    text-decoration: none;
+    color: #111111
+}
+
+header li a:hover {
+    font-style: italic;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+header li a:active {
+    font-style: italic;
+    font-weight: 500;
+    background-color: #111111;
+    color: #e6e6da;
+    cursor: pointer;
+}
+
+header a.active {
+    font-style: italic;
+    font-weight: 500;
+    background-color: #111111;
+    color: #e6e6da;
+}
+
+hr.thin-top {
+    height: 1px;
+    border: 0;
+    color: #111111;
+    background-color: #111111;
+    width: 54%;
+    justify-self: center;
+    flex-grow: 1;
+}
+
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    background-color: #e6e6da;
+    animation: fadein 1s;
+}
+
+.content {
+    z-index: 10;
+    width: 80%;
+    padding: 12em 10%;
+}
+
+.content h1 {
+    font-family: "Pearl";
+    color: #111111;
+    font-size: 7em;
+    text-align: center;
+    padding: 0.7em;
+    animation: fadein 2s ease-in-out;
+}
+
+.content h2 {
+    font-family: "Montserrat";
+    font-size: 2em;
+    color: #111111;
+    text-align: center;
+}
+
+.content h3 {
+    font-family: "Montserrat";
+    font-size: 1em;
+    text-align: center;
+    color: #111111;
+    padding-top: .5em;
+    text-transform: uppercase;
+    margin: 0 auto;
+    line-height: 1.8em;
+}
+
+/******ABOUT*********/
+
+.about {
+    width: 100%;
+    background-color: #e6e6da;
+    height: auto;
+    display: block;
+    animation: fadein 1s;
+}
+ 
+
+.about h1 {
+    font-family: "Pearl";
+    font-size: 7em;
+    color: #111111;
+    padding-top: 1.5em;
+    text-align: center;
+}
+
+.about-content {
+    padding-top: 5em;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.about p {
+    font-family: "Montserrat";
+    color: #111111;
+    line-height: 1.8em;
+    font-weight: 300;
+    text-align: left;
+    padding-top: 1em;
+}
+
+p.intro {
+    font-weight: 500;
+}
+
+.skills {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 4em;
+}
+
+.skills h2 {
+    font-family: "Pearl";
+    font-size: 3em;
+    color: #111111;
+    padding-bottom: 1em;
+}
+
+.skills h3 {
+    font-family: "Montserrat";
+    color: #111111;
+    font-size: 1em;
+    font-weight: 500;
+    font-style: italic;
+    padding-bottom: 4em;
+}
+
+
+
+/*******WORK********/
+
+.work {
+    width: 100vw;
+    height: 100vh;
+    background-color:#e6e6da;
+    display: block;
+    animation: fadein 1s;
+    
+}
+
+.work h1 {
+    font-family: "Pearl";
+    font-size: 7em;
+    color: #111111;
+    padding-top: 1.5em;
+    text-align: center;
+}
+
+.work h3 {
+    font-family: "Montserrat";
+    font-size: 2em;
+    color: #111111;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.work h3:hover {
+    font-style: italic;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.work-content {
+    padding-top: 5em;
+    width: 50%;
+    margin: 0 auto;
+}
