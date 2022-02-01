@@ -80,8 +80,6 @@ header {
     margin: 0;
     padding: .5em 0;
     align-items: center;
-    background-color: #e6e6da;
-    animation: fadein 1s;
     display: flex;
 }
 
@@ -147,6 +145,20 @@ hr.thin-top {
     flex-grow: 1;
 }
 
+hr.thin-bottom {
+    height: 1px;
+    border: 0;
+    color: #111111;
+    background-color: #111111;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    justify-self: center;
+    flex-grow: 1;
+    position: absolute;
+    bottom: 2em;
+}
+
 
 .hero {
     width: 100vw;
@@ -158,13 +170,15 @@ hr.thin-top {
 .content {
     z-index: 10;
     width: 80%;
-    padding: 12em 10%;
+    padding-top: 11em;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .content h1 {
     font-family: "Pearl";
     color: #111111;
-    font-size: 7em;
+    font-size: 8em;
     text-align: center;
     padding: 0.7em;
     animation: fadein 2s ease-in-out;
@@ -172,17 +186,18 @@ hr.thin-top {
 
 .content h2 {
     font-family: "Montserrat";
-    font-size: 2em;
+    font-size: 2.5em;
     color: #111111;
     text-align: center;
 }
 
 .content h3 {
     font-family: "Montserrat";
-    font-size: 1em;
+    font-size: 1.2em;
+    font-style: italic;
     text-align: center;
     color: #111111;
-    padding-top: .5em;
+    padding-top: .3em;
     text-transform: uppercase;
     margin: 0 auto;
     line-height: 1.8em;
@@ -201,14 +216,14 @@ hr.thin-top {
 
 .about h1 {
     font-family: "Pearl";
-    font-size: 7em;
+    font-size: 8em;
     color: #111111;
     padding-top: 1.5em;
     text-align: center;
 }
 
 .about-content {
-    padding-top: 5em;
+    padding-top: 4em;
     width: 40%;
     margin: 0 auto;
 }
@@ -229,7 +244,8 @@ p.intro {
 .skills {
     width: 50%;
     margin: 0 auto;
-    padding-top: 4em;
+    padding-top: 4.5em;
+    margin: 0 auto;
 }
 
 .skills h2 {
@@ -237,6 +253,7 @@ p.intro {
     font-size: 3em;
     color: #111111;
     padding-bottom: 1em;
+    text-align: center;
 }
 
 .skills h3 {
@@ -246,6 +263,7 @@ p.intro {
     font-weight: 500;
     font-style: italic;
     padding-bottom: 4em;
+    text-align: center;
 }
 
 
@@ -263,7 +281,7 @@ p.intro {
 
 .work h1 {
     font-family: "Pearl";
-    font-size: 7em;
+    font-size: 8em;
     color: #111111;
     padding-top: 1.5em;
     text-align: center;
@@ -288,3 +306,53 @@ p.intro {
     width: 50%;
     margin: 0 auto;
 }
+
+
+/********CONTACT**********/
+
+.contact {
+    width: 100vw;
+    height: 100vh;
+    background-color: #e6e6da;
+    animation: fadein 1s;
+}
+
+
+.contact h1 {
+    font-family: "Pearl";
+    font-size: 8em;
+    color: #111111;
+    text-align: center;
+    padding: 1.5em 0 .5em 0;
+}
+
+
+.contact-content {
+    font-family: "Montserrat";
+    font-size: 1em;
+    color: #e6e6da;
+    line-height: 1.5em;
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+    padding: 3em 0 3em 0;
+    border: solid 1px #111111;
+    background-color: #111111;
+}
+
+
+.contact-content a {
+    text-decoration: underline;
+    color: #e6e6da;
+}
+
+.contact-content a:hover {
+    cursor: pointer;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.contact.border {
+    border: solid 1px #111111;
+}
+
